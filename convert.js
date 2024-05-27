@@ -1,7 +1,7 @@
 function run() {
   const params = JSON.parse(Host.inputString());
   const { from, to, amount } = params;
-  const apiKey = '14ba3a05495084fa0071f4613b098271';
+  const apiKey = 'your_api_key';
 
   let url = `https://api.exchangeratesapi.io/v1/convert?access_key=${apiKey}&from=${from}&to=${to}&amount=${amount}`;
   const request = {
